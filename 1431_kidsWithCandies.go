@@ -1,3 +1,5 @@
+// kidsWithCandies: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies
+// #easy
 func kidsWithCandies(candies []int, extraCandies int) []bool {
 	n := len(candies)
 	max := candies[0]

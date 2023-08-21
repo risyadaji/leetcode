@@ -1,3 +1,5 @@
+// mergeAlternately: https://leetcode.com/problems/merge-strings-alternately
+// #easy
 func mergeAlternately(word1 string, word2 string) string {
 	m, n := len(word1), len(word2)
 	ans := make([]byte, 0, m+n)
@@ -11,3 +13,6 @@ func mergeAlternately(word1 string, word2 string) string {
 	}
 	return string(ans)
 }
+
+
+
