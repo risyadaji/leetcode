@@ -1,3 +1,7 @@
+package main
+
+import "math"
+
 // https://leetcode.com/problems/increasing-triplet-subsequence
 // #medium
 func increasingTriplet(nums []int) bool {

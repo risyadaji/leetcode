@@ -1,3 +1,5 @@
+package main
+
 // canPlaceFlowers: https://leetcode.com/problems/can-place-flowers/
 // #easy
 func canPlaceFlowers(flowerbed []int, n int) bool {

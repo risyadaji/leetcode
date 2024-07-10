@@ -1,3 +1,5 @@
+package main
+
 // reverseVowels: https://leetcode.com/problems/reverse-vowels-of-a-string
 // #easy
 func reverseVowels(s string) string {

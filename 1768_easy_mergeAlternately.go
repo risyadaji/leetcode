@@ -1,3 +1,5 @@
+package main
+
 // mergeAlternately: https://leetcode.com/problems/merge-strings-alternately
 // #easy
 func mergeAlternately(word1 string, word2 string) string {
@@ -13,6 +15,3 @@ func mergeAlternately(word1 string, word2 string) string {
 	}
 	return string(ans)
 }
-
-
-
