@@ -3,26 +3,19 @@ package main
 // ref: https://leetcode.com/problems/ransom-note/description/
 
 func canConstruct(ransomNote string, magazine string) bool {
-	mm := make(map[string]int)
-	mr := make(map[string]int)
-
-	for i := range ransomNote {
-		mr[string(ransomNote[i])]++
-	}
-	for i := range magazine {
-		mm[string(magazine[i])]++
+	magzChar := make(map[rune]int)
+	for _, char := range magazine {
+		magzChar[char]++
 	}
 
-	canConstruct := false
-	for k, rv := range mr {
-		if mv, ok := mm[k]; ok && mv >= rv {
-			canConstruct = true
-		} else {
+	for _, char := range ransomNote {
+		if magzChar[char] == 0 {
 			return false
 		}
+		magzChar[char]--
 	}
 
-	return canConstruct
+	return true
 }
 
 // nice solution
